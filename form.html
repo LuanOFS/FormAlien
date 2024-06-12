@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="https://ecom-invader.com/wp-content/uploads/2023/08/alien.png" sizes="16x16" type="image/png">
+    <title>JOIN US!</title>
+  </head>
+
+  <body>
+      <h1 id="title">You have been conscripted!</h1>
+      <p id="description"><strong>ATTENTION, THIS IS NOT A DRILL!</strong> You have been drafted to Join the ranks of Earth's finest in our battle against extraterrestrial invaders. Enlist now and receive a complimentary space blaster (Disclaimer: may or may not work against actual aliens). Remember, it's not just about saving the planet, it's about looking good while doing it! Over and out, soldier!</p>
+      <form id="survey-form"  method="post" action='https://register-demo.freecodecamp.org'>
+    
+      <fieldset id="profile"> <!--text fields-->
+        <label id="name-label" for="name">What's your first name? <input id="name" name="name" type="text" maxlength="20" required/></label>
+        <label id="last-name-label" for="last-name">And your last name? <input id="last-name" name="last-name"  type="text" maxlength="20" required /></label>
+        <label id="email-label" for="email">What's your email? <input id="email" name="email" type="email" required /></label>
+        <label id="number-label" for="number">How many trips around the sun?: <input id="number" name="number" type="number" min="18" max="45"  required/></label>
+        </fieldset>
+
+              <fieldset id="dropdown-field" class="compliment"> <!--dropdown field-->
+              <label for="dropdown-label">What's your fail-proof strategy to kick out the alien invaders?
+              <select id="dropdown" name="dropdown">
+                <option disabled selected>(select one)</option>
+                <option value="1">Introduce an alien invasion tax - nothing escapes terrestrial red tape.</option>
+                <option value="2">Launch a fashion line inspired by their space suits - ridicule kills faster than lasers.</option>
+                <option value="3">Assign them a human mentor to teach the art of keeping promises - start with the toodlers, they're the toughest negotiators.</option>
+                <option value="4">Make them sign a peace treaty on social media live stream - breach of contract goes viral.</option>
+              </select>
+              </label>
+
+              <fieldset id="radio-field" class="compliment" > <!--Radio field-->
+              <legend id="radio-legend"><b>Are you the one and only masterpiece or is there a factory recall? (required)</b></legend>
+              <label for="only-child"><input id="only-child" type="radio" name="upbringing-type" class="inline" />Indeed! I'm the solitary disappointment in a sea of shattered dreams.</label><br><br>
+              <label for="nonly-child"><input id="nonly-child" type="radio" name="upbringing-type" class="inline" />Nope, I'm not the sole survivor in the family gene pool. </label>
+              </fieldset>
+               
+              <fieldset id="check-field" class="compliment"> <!--Checkbox field-->
+              <legend id="checkbox-legend"><b><strong>And so, what are your experiences with alien invasions?</strong></b></legend>
+              <label for="checkbox1"><input type="checkbox" id="checkbox1" name="type1" value="value1" class="inline"/>I have cool leather jackets.</label><br><br>             
+              <label for="checkbox2"><input type="checkbox" id="checkbox2" name="type1" value="value1" class="inline"/>I Mistook a spaceship: Fare cosmic, no xenomorphs, luckily.</label><br><br>
+              <label for="checkbox3"><input type="checkbox" id="checkbox3" name="type1" value="value1" class="inline"/>I Keep a spare copy of 'E.T.' on DVD handy. It's the universal icebreaker.</label><br><br>
+              <label for="checkbox4"><input type="checkbox" id="checkbox4" name="type1" value="value1" class="inline"/>I always Keep a copy of 'The Hitchhiker's Guide to the Galaxy' handy. You never know when you'll need advice on Vogon poetry.</label><br><br>
+              <label for="checkbox5"><input type="checkbox" id="checkbox5" name="type1" value="value1" class="inline"/>I binge-watched "The X-Files". Does that count?</label><br>   
+            </fieldset>
+             
+            <fieldset id="bio-field" class="compliment">
+            <label id="bio-label" for="bio"> Alright fellow, I wanna hear your life story: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label><br><br>
+            <button class="enroll-button" type="submit">ENROLL!!!!!</button>
+          </fieldset>
+
+          </form>
+    </body>
